@@ -1,0 +1,15 @@
+//
+//  BKSafeKit.h
+//  BKSafeKit
+//
+//  Created by BestKai on 16/5/27.
+//  Copyright © 2016年 BestKai. All rights reserved.
+//
+
+#ifndef BKSafeKit_h
+#define BKSafeKit_h
+
+#import "NSArray+BKSafe.h"
+#import "NSMutableDictionary+BKSafe.h"
+
+#endif /* BKSafeKit_h */
