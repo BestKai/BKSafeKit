@@ -9,15 +9,6 @@
 #import "NSObject+BKSwizzling.h"
 #import <objc/runtime.h>
 
-
-void BKLog(const char* file, const char* func, int line, NSString* fmt, ...)
-{
-    va_list args; va_start(args, fmt);
-    NSLog(@"%s|%s|%d|%@", file, func, line, [[NSString alloc] initWithFormat:fmt arguments:args]);
-    va_end(args);
-}
-
-
 @implementation NSObject (BKSwizzling)
 
 

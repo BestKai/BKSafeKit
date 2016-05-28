@@ -19,9 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString *string = @"123";
+    NSMutableArray *aaa = [NSMutableArray arrayWithObjects:[[NSArray alloc] init],[[NSMutableArray alloc] init], nil];
     
-    [string stringByAppendingString:nil];
+    [aaa[1] addObject:@"123"];
+    
+    [aaa[0] addObject:@"456"];
+    
     
 }
 

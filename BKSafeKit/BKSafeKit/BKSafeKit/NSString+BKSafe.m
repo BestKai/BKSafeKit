@@ -28,6 +28,8 @@
     if (string) {
         return [self BKSafe_stringByAppendingString:string];
     }
+    NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),string);
+    
     return self;
 }
 

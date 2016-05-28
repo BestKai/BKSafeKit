@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define BKAssert(condition, ...) \
-if (!(condition)){ BKLog(__FILE__, __FUNCTION__, __LINE__, __VA_ARGS__);} \
-NSAssert(condition, @"%@", __VA_ARGS__);
-
-void BKLog(const char* file, const char* func, int line, NSString* fmt, ...);
+#define LogPrefix [NSString stringWithFormat:@"%s %d",__FILE__,__LINE__]
 
 @interface NSObject (BKSwizzling)
 

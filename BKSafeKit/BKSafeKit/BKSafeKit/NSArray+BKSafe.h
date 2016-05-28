@@ -10,4 +10,7 @@
 
 @interface NSArray (BKSafe)
 
+- (void)addObject:(id)anObject;
+
+
 @end

@@ -39,7 +39,7 @@
         [self BKSafe_addObject:object];
     }else
     {
-        BKAssert(NO, @"NSMutableArray invalid args BKSafe_addObject:[%@]", object);
+        NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
     }
 }
 
@@ -51,10 +51,12 @@
     }else
     {
         if (!object) {
-            BKAssert(NO, @"NSMutableArray invalid args BKSafe_insertObject:[%@] atIndex:[%@]", object, @(index));
+            
+            NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
         }
         if (index > self.count) {
-            BKAssert(NO, @"NSMutableArray BKSafe_insertObject[%@] atIndex:[%@] out of bound:[%@]", object, @(index), @(self.count));
+            
+            NSLog(@"%@ [%@ %@] [%@] atIndex:[%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),object,@(index),@(self.count));
         }
     }
 }
@@ -65,7 +67,7 @@
         [self BKSafe_removeObjectAtInex:index];
     }else
     {
-        BKAssert(NO, @"NSMutableArray BKSafe_removeObjectAtInex:[%@] out of bound:[%@]", @(index), @(self.count));
+        NSLog(@"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
     }
 }
 
@@ -76,10 +78,12 @@
     }else
     {
         if (!object) {
-            BKAssert(NO, @"NSMutableArray invalid args BKSafe_replaceObjectAtIndex:[%@] withObject:[%@]", @(index), object);
+            
+            NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
         }
         if (index >= self.count) {
-            BKAssert(NO, @"NSMutableArray BKSafe_replaceObjectAtIndex:[%@] withObject:[%@] out of bound:[%@]", @(index), object, @(self.count));
+            
+            NSLog(@"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
         }
     }
 }
