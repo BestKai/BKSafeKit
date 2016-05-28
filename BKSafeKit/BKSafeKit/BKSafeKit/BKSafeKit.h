@@ -11,5 +11,7 @@
 
 #import "NSArray+BKSafe.h"
 #import "NSMutableDictionary+BKSafe.h"
+#import "NSMutableArray+BKSafe.h"
+#import "NSString+BKSafe.h"
 
 #endif /* BKSafeKit_h */

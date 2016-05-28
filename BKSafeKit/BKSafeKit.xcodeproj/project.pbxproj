@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E288753E1CF926F300B3E37B /* NSString+BKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = E288753D1CF926F300B3E37B /* NSString+BKSafe.m */; };
 		E2F3CDD31CF8312200F6DECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3CDD21CF8312200F6DECD /* main.m */; };
 		E2F3CDD61CF8312200F6DECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3CDD51CF8312200F6DECD /* AppDelegate.m */; };
 		E2F3CDD91CF8312200F6DECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3CDD81CF8312200F6DECD /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E288753C1CF926F300B3E37B /* NSString+BKSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BKSafe.h"; sourceTree = "<group>"; };
+		E288753D1CF926F300B3E37B /* NSString+BKSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BKSafe.m"; sourceTree = "<group>"; };
 		E2F3CDCE1CF8312200F6DECD /* BKSafeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKSafeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F3CDD21CF8312200F6DECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2F3CDD41CF8312200F6DECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				E2F3CE2B1CF8408E00F6DECD /* NSMutableDictionary+BKSafe.m */,
 				E2F3CE2F1CF877E100F6DECD /* NSMutableArray+BKSafe.h */,
 				E2F3CE301CF877E100F6DECD /* NSMutableArray+BKSafe.m */,
+				E288753C1CF926F300B3E37B /* NSString+BKSafe.h */,
+				E288753D1CF926F300B3E37B /* NSString+BKSafe.m */,
 			);
 			path = BKSafeKit;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				E2F3CE291CF83C2300F6DECD /* NSArray+BKSafe.m in Sources */,
 				E2F3CDD91CF8312200F6DECD /* ViewController.m in Sources */,
 				E2F3CDD61CF8312200F6DECD /* AppDelegate.m in Sources */,
+				E288753E1CF926F300B3E37B /* NSString+BKSafe.m in Sources */,
 				E2F3CE071CF8322600F6DECD /* NSObject+BKSwizzling.m in Sources */,
 				E2F3CDD31CF8312200F6DECD /* main.m in Sources */,
 				E2F3CE2C1CF8408E00F6DECD /* NSMutableDictionary+BKSafe.m in Sources */,

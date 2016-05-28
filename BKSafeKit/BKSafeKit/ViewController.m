@@ -19,10 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"a",@"key1",@"b",@"key2", nil];
-    [dictionary setObject:nil forKey:nil];
-    [dictionary removeObjectForKey:nil];
-
+    NSString *string = @"123";
+    
+    [string stringByAppendingString:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

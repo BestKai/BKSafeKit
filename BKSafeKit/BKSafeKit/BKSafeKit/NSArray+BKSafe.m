@@ -22,7 +22,7 @@
         //ios 9.0以上没内容数组是__NSArray0
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >=9.0) {
             obj = [[NSArray alloc] init];
-            [self swizzleInstanceSelector:@selector(objectAtIndex:) withNewSelector:@selector(BKSafe_objectAtIndex0:)];
+            [obj swizzleInstanceSelector:@selector(objectAtIndex:) withNewSelector:@selector(BKSafe_objectAtIndex0:)];
         }
     });
 }
