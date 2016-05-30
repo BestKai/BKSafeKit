@@ -1,14 +1,13 @@
 //
 //  ViewController.m
-//  BKSafeKit
+//  BKSafeKitDemo
 //
-//  Created by BestKai on 16/5/27.
+//  Created by BestKai on 16/5/30.
 //  Copyright © 2016年 BestKai. All rights reserved.
 //
 
 #import "ViewController.h"
 
-#import "BKSafeKit/BKSafeKit.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +23,7 @@
     [aaa[1] addObject:@"123"];
     
     [aaa[0] addObjectsFromArray:aaa[1]];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

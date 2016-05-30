@@ -1,18 +1,18 @@
 //
-//  BKSafeKitUITests.m
-//  BKSafeKitUITests
+//  BKSafeKitDemoUITests.m
+//  BKSafeKitDemoUITests
 //
-//  Created by BestKai on 16/5/27.
+//  Created by BestKai on 16/5/30.
 //  Copyright © 2016年 BestKai. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface BKSafeKitUITests : XCTestCase
+@interface BKSafeKitDemoUITests : XCTestCase
 
 @end
 
-@implementation BKSafeKitUITests
+@implementation BKSafeKitDemoUITests
 
 - (void)setUp {
     [super setUp];

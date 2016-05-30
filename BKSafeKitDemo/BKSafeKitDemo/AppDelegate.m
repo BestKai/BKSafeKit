@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  BKSafeKit
+//  BKSafeKitDemo
 //
-//  Created by BestKai on 16/5/27.
+//  Created by BestKai on 16/5/30.
 //  Copyright © 2016年 BestKai. All rights reserved.
 //
 
