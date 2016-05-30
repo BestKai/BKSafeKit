@@ -23,8 +23,7 @@
     
     [aaa[1] addObject:@"123"];
     
-    [aaa[0] addObject:@"456"];
-    
+    [aaa[0] addObjectsFromArray:aaa[1]];
     
 }
 

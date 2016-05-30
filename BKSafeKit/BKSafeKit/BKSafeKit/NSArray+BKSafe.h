@@ -12,5 +12,5 @@
 
 - (void)addObject:(id)anObject;
 
-
+- (void)addObjectsFromArray:(NSArray*)otherArray;
 @end

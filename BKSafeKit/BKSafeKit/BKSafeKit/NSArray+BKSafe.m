@@ -55,5 +55,14 @@
     }
 }
 
+- (void)addObjectsFromArray:(NSArray*)otherArray {
+    
+    if (![self isKindOfClass:[NSMutableArray class]]) {
+        NSLog(@"%@ [%@ %@] unrecognized selector",LogPrefix,
+              NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+        return;
+    }
+}
+
 
 @end
