@@ -30,9 +30,10 @@
 - (id)BKSafe_objectAtIndexI:(NSUInteger)index
 {
     if (index>=self.count) {
-        NSLog(@"%@ [%@ %@] index [%lu] beyond bounds [0...%lu]",LogPrefix,
-              NSStringFromClass([self class]), NSStringFromSelector(_cmd), (unsigned long)index,
-              MAX((unsigned long)self.count - 1, 0));
+        
+        NSAssert(NO, @"%@ [%@ %@] index [%zd] beyond bounds [0...%lu]",LogPrefix,
+                 NSStringFromClass([self class]), NSStringFromSelector(_cmd),index,
+                 MAX((signed long)self.count - 1, 0));
         return nil;
     }
     return [self BKSafe_objectAtIndexI:index];
@@ -41,28 +42,9 @@
 
 - (id)BKSafe_objectAtIndex0:(NSUInteger)index
 {
-    NSLog(@"%@ [%@ %@] index[%zd] beyond bounds [%zd]",LogPrefix,
-          NSStringFromClass([self class]),NSStringFromSelector(_cmd),index,self.count);
+    NSAssert(NO,@"%@ [%@ %@] index[%zd] beyond bounds [%zd]",LogPrefix,
+             NSStringFromClass([self class]),NSStringFromSelector(_cmd),index,self.count);
     return nil;
 }
-
-- (void)addObject:(id)anObject
-{
-    if (![self isKindOfClass:[NSMutableArray class]]) {
-        NSLog(@"%@ [%@ %@] unrecognized selector",LogPrefix,
-              NSStringFromClass([self class]),NSStringFromSelector(_cmd));
-        return;
-    }
-}
-
-- (void)addObjectsFromArray:(NSArray*)otherArray {
-    
-    if (![self isKindOfClass:[NSMutableArray class]]) {
-        NSLog(@"%@ [%@ %@] unrecognized selector",LogPrefix,
-              NSStringFromClass([self class]),NSStringFromSelector(_cmd));
-        return;
-    }
-}
-
 
 @end

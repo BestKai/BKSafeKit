@@ -29,6 +29,10 @@
 {
     if (index< self.count) {
         return [self BKSafe_objectAtIndex:index];
+    }else
+    {
+        NSAssert(NO, @"%@ [%@ %@] index [%zd] beyond bounds %zd",LogPrefix,
+                      NSStringFromClass([self class]), NSStringFromSelector(_cmd),index,MAX((signed long)self.count-1, 0));
     }
     return nil;
 }
@@ -39,7 +43,7 @@
         [self BKSafe_addObject:object];
     }else
     {
-        NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
+        NSAssert(NO, @"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
     }
 }
 
@@ -52,11 +56,11 @@
     {
         if (!object) {
             
-            NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
+            NSAssert(NO, @"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
         }
         if (index > self.count) {
             
-            NSLog(@"%@ [%@ %@] [%@] atIndex:[%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),object,@(index),@(self.count));
+            NSAssert(NO, @"%@ [%@ %@] [%@] atIndex:[%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),object,@(index),@(self.count));
         }
     }
 }
@@ -67,7 +71,7 @@
         [self BKSafe_removeObjectAtInex:index];
     }else
     {
-        NSLog(@"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
+        NSAssert(NO, @"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
     }
 }
 
@@ -79,11 +83,11 @@
     {
         if (!object) {
             
-            NSLog(@"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
+            NSAssert(NO, @"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object);
         }
         if (index >= self.count) {
             
-            NSLog(@"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
+            NSAssert(NO, @"%@ [%@ %@] [%@] out of bound:[%@] ",LogPrefix,[self class],NSStringFromSelector(_cmd),@(index),@(self.count));
         }
     }
 }

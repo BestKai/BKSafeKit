@@ -18,12 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSMutableArray *aaa = [NSMutableArray arrayWithObjects:[[NSArray alloc] init],[[NSMutableArray alloc] init], nil];
+    NSMutableArray *aaa = [[NSMutableArray alloc] init];
     
-    [aaa[1] addObject:@"123"];
     
-    [aaa[0] addObjectsFromArray:aaa[1]];
-
+    NSLog(@"%@",aaa[0]);
+    
+    NSLog(@"%@",aaa[1]);
 }
 
 - (void)didReceiveMemoryWarning {
