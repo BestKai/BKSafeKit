@@ -17,18 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray *aaa = [[NSMutableArray alloc] initWithObjects:@[],@[], nil];
     
-    NSMutableArray *aaa = [[NSMutableArray alloc] init];
+    
+    NSLog(@"%@",[aaa[0] objectForKey:@""]);
     
     
-    NSLog(@"%@",aaa[0]);
-    
-    NSLog(@"%@",aaa[1]);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

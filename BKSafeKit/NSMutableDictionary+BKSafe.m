@@ -25,9 +25,15 @@
 - (void)BKSafe_setObject:(id)object forKey:(id<NSCopying>)key
 {
     if (!object) {
+        
+        NSAssert(NO, @"%@ [%@ %@] invalid object[%@] for key [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object,key);
+
         return;
     }
     if (!key) {
+        
+        NSAssert(NO, @"%@ [%@ %@] invalid object[%@] for key [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),object,key);
+
         return;
     }
     
@@ -37,6 +43,7 @@
 - (void)BKSafe_removeObjectForKey:(id<NSCopying>)key
 {
     if (!key) {
+        NSAssert(NO, @"%@ [%@ %@] invalid  key [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),key);
         return;
     }
     [self BKSafe_removeObjectForKey:key];
