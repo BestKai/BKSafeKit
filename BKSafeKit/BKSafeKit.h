@@ -9,9 +9,13 @@
 #ifndef BKSafeKit_h
 #define BKSafeKit_h
 
+#ifndef DEBUG
+
 #import "NSArray+BKSafe.h"
 #import "NSMutableDictionary+BKSafe.h"
 #import "NSMutableArray+BKSafe.h"
 #import "NSString+BKSafe.h"
+
+#endif
 
 #endif /* BKSafeKit_h */

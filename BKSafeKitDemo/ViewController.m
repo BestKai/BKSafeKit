@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BKSafeKit.h"
+
 
 @interface ViewController ()
 
@@ -17,11 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     NSMutableArray *aaa = [[NSMutableArray alloc] initWithObjects:@[],@[], nil];
     
-    
-    NSLog(@"%@",[aaa[0] objectForKey:@""]);
-    
+    NSLog(@"%@",aaa[3]);
     
 }
 
