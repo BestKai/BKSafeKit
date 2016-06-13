@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "BKSafeKit.h"
-
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -22,8 +22,8 @@
     
     NSMutableArray *aaa = [[NSMutableArray alloc] initWithObjects:@[],@[], nil];
     
-    NSLog(@"%@",aaa[3]);
     
+    NSLog(@"%@",[aaa[0] objectForKey:@""]);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -29,7 +29,7 @@
         return [self BKSafe_stringByAppendingString:string];
     }
     
-    NSAssert(NO, @"%@ [%@ %@] invalid args [%@]",LogPrefix,[self class],NSStringFromSelector(_cmd),string);
+    NSAssert(NO, @"%@ [%@ %@] invalid args [null]",LogPrefix,[self class],NSStringFromSelector(_cmd));
     
     return self;
 }
