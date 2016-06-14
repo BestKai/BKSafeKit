@@ -11,6 +11,7 @@
 
 @implementation NSMutableDictionary (BKSafe)
 
+#ifndef DEBUG
 + (void) load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -20,7 +21,7 @@
         [mutableDic swizzleInstanceSelector:@selector(removeObjectForKey:) withNewSelector:@selector(BKSafe_removeObjectForKey:)];
     });
 }
-
+#endif
 
 - (void)BKSafe_setObject:(id)object forKey:(id<NSCopying>)key
 {

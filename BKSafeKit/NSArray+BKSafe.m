@@ -10,6 +10,7 @@
 #import "NSObject+BKSwizzling.h"
 @implementation NSArray (BKSafe)
 
+#ifndef DEBUG
 + (void)load
 {
     static dispatch_once_t onceToken;
@@ -26,6 +27,7 @@
         }
     });
 }
+#endif
 
 - (id)BKSafe_objectAtIndexI:(NSUInteger)index
 {

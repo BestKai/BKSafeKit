@@ -11,18 +11,18 @@
 
 @implementation NSObject (BKSwizzling)
 
-+ (void)load
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        NSObject *obj = [[NSObject alloc] init];
-        
-        [obj swizzleInstanceSelector:@selector(methodSignatureForSelector:) withNewSelector:@selector(BKSafe_methodSignatureForSelector:)];
-        
-        [obj swizzleInstanceSelector:@selector(forwardInvocation:) withNewSelector:@selector(BKSafe_forwardInvocation:)];
-    });
-}
+//+ (void)load
+//{
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        
+//        NSObject *obj = [[NSObject alloc] init];
+//        
+//        [obj swizzleInstanceSelector:@selector(methodSignatureForSelector:) withNewSelector:@selector(BKSafe_methodSignatureForSelector:)];
+//        
+//        [obj swizzleInstanceSelector:@selector(forwardInvocation:) withNewSelector:@selector(BKSafe_forwardInvocation:)];
+//    });
+//}
 
 //替换对象方法
 - (void)swizzleInstanceSelector:(SEL)origSelector withNewSelector:(SEL)newSelector{

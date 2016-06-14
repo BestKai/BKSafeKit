@@ -56,7 +56,6 @@
 		E2B6F7ED1CFC149F0048618E /* BKSafeKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKSafeKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B6F7F11CFC149F0048618E /* BKSafeKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKSafeKitDemoUITests.m; sourceTree = "<group>"; };
 		E2B6F7F31CFC149F0048618E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2B6F8001CFC15100048618E /* BKSafeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKSafeKit.h; sourceTree = "<group>"; };
 		E2B6F8011CFC15100048618E /* NSArray+BKSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BKSafe.h"; sourceTree = "<group>"; };
 		E2B6F8021CFC15100048618E /* NSArray+BKSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BKSafe.m"; sourceTree = "<group>"; };
 		E2B6F8031CFC15100048618E /* NSMutableArray+BKSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BKSafe.h"; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 		E2B6F7FF1CFC15100048618E /* BKSafeKit */ = {
 			isa = PBXGroup;
 			children = (
-				E2B6F8001CFC15100048618E /* BKSafeKit.h */,
 				E2B6F8011CFC15100048618E /* NSArray+BKSafe.h */,
 				E2B6F8021CFC15100048618E /* NSArray+BKSafe.m */,
 				E2B6F8031CFC15100048618E /* NSMutableArray+BKSafe.h */,

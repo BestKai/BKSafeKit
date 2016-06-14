@@ -11,6 +11,7 @@
 
 @implementation NSMutableArray (BKSafe)
 
+#ifndef DEBUG
 + (void)load
 {
     static dispatch_once_t onceToken;
@@ -23,7 +24,7 @@
         [mutableArr swizzleInstanceSelector:@selector(insertObject:atIndex:) withNewSelector:@selector(BKSafe_insertObject:atIndex:)];
     });
 }
-
+#endif
 
 - (id)BKSafe_objectAtIndex:(NSUInteger)index
 {

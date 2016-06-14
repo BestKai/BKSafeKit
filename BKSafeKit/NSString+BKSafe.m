@@ -11,7 +11,7 @@
 
 @implementation NSString (BKSafe)
 
-
+#ifndef DEBUG
 + (void)load
 {
     static dispatch_once_t onceToken;
@@ -22,7 +22,7 @@
         [obj swizzleInstanceSelector:@selector(stringByAppendingString:) withNewSelector:@selector(BKSafe_stringByAppendingString:)];
     });
 }
-
+#endif
 - (NSString *)BKSafe_stringByAppendingString:(NSString *)string
 {
     if (string) {
